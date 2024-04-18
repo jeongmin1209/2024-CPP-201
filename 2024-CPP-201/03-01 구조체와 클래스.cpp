@@ -5,16 +5,11 @@ using namespace std;
 
 class Student {
 public:
-	Student(int hakbun, string name) {
-		hakbun = hakbun;
-		name_ = name;
-	}
-	Student() {
-		hakbun_ = 2121;
-		name_ = "JWP"
-	}
+	Student(int hakbun, string name) 
+		: hakbun_(hakbun), name_(name)
 	
-	void 
+	Student()
+		: hakbun_(2121), name_("JWP")
 private:
 	int hakbun_;
 	string name_;
